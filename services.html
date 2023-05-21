@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your Beauty</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styleHeader.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+
+	<!------------ HEADER -------------->
+	<header class="header">
+		<div class="container">
+			<div class="header-body">
+
+				<a href="index.html" class="header-logo-2">
+					YOUR BEAUTY
+				</a>
+
+				<div class="header-burger">
+					<span>
+					</span>
+				</div>
+
+				<nav class="header-menu">
+
+					<ul class="header-list">
+						<li>
+							<a href="courses.html" class="header-link">Наши курсы</a>
+
+						</li>
+						<li>
+							<a href="services.html" class="header-link">Наши услуги</a>
+
+						</li>
+					</ul>
+
+					<a href="index.html" class="header-logo">
+						<img src="images/logo.png" alt="logo">
+					</a>
+
+					<ul class="header-list">
+						<li>
+							<a href="contacts.html" class="header-link ">Контакты</a>
+
+						</li>
+						<li>
+							<span class="header-link show-consult-form">
+								Консультация
+							</span>
+						</li>
+					</ul>
+
+					<a href="index.html" title="Главная" class="header-logo-3">
+						<img src="images/logo.png" alt="logo">
+					</a>
+
+				</nav>
+
+			</div>
+		</div>
+		<hr class="border-style">
+	</header>
+	<!------------ /HEADER -------------->
+
+	<!------------ FORM -------------->
+	<div class="consult-form" id="consult-form">
+
+		<div class="white-form-2">
+			<div class="close-form">
+				<img src="images/close.png" class="close-btn">
+			</div>
+
+			<div class="form-content-wrapper">
+
+
+				<div class="form-content-2">
+
+					<div>
+						<p>Ваше имя</p>
+						<input type="text" id="consult-name" name="name" size="30" class="border-style">
+					</div>
+					<div>
+						<p>Номер телефона</p>
+						<input type="text" id="consult-telephone" name="telephone" size="30" class="border-style phone">
+						<script type="text/javascript">
+							$(".phone").mask("+375(99)999-99-99");
+						</script>
+					</div>
+
+					<button class="btn" onclick="form1()">
+						<p>Отправить</p>
+						<img src="images/arrow.png" class="arrow">
+					</button>
+				</div>
+				<img src="images/plant_2_1.png" class="form-img">
+			</div>
+			<div class="two-lines"></div>
+		</div>
+	</div>
+	<!------------ /FORM -------------->
+
+	<!------------ MESSAGE FORM -------------->
+	<div class="message-form message-form-1" id="message-form-1">
+		<div class="message-content" id="message-content">
+			Вы подали заявку на консультацию. В ближайшее время наш администратор свяжется с вами! Если вы обнаружили, что телефон указан неверно, заполните форму ещё раз!
+		</div>
+		<div class="btn-wrapper">
+			<button class="btn" onclick="closeMessage()">ОК</button>
+		</div>
+
+	</div>
+	<!------------ /MESSAGE FORM -------------->
+
+	<div class="page-content">
+
+		<!-- COURSES CATALOG BLOCK -->
+		<div class="block block-9">
+			<div class="container">
+
+				<p class="title">Наши услуги</p>
+
+				<div class="courses-catalog-content">
+
+
+					<div class="course-item">
+
+						<img src="images/makeup.jpg" class="course-item-img">
+
+						<div class="course-white-rect">
+							<div class="service-item-content">
+
+								<img src="images/makeup.jpg" class="service-item-img">
+
+								<div class="service-item-content-wrapper">
+
+									<p class="title">Макияж</p>
+
+									<div class="services-list-2">
+										
+										<div class="service">
+											<div class="service-description">Повседневный макияж</div>
+											<div class="service-price">60 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Nude makeup</div>
+											<div class="service-price">70 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Smoky eyes</div>
+											<div class="service-price">110 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Коммерческий макияж</div>
+											<div class="service-price">120 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Тематический макияж</div>
+											<div class="service-price">120 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Вечерний макияж</div>
+											<div class="service-price">100 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Colour makeup</div>
+											<div class="service-price">100 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Hollywood makeup</div>
+											<div class="service-price">100 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Cat eyes</div>
+											<div class="service-price">90 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Свадебный макияж</div>
+											<div class="service-price">140 BYN</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+							<div class="two-lines"></div>
+						</div>
+					</div>
+
+
+					<div class="course-item">
+
+						<img src="images/nails.jpg" class="course-item-img">
+
+						<div class="course-white-rect">
+							<div class="service-item-content">
+
+								<img src="images/nails.jpg" class="service-item-img">
+
+								<div class="service-item-content-wrapper">
+
+									<p class="title">Маникюр/педикюр</p>
+
+									<div class="services-list-2">
+										<div class="service">
+											<div class="service-description">Аппаратный маникюр</div>
+											<div class="service-price">35 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Наращивание ногтей</div>
+											<div class="service-price">65 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Коррекция ногтей</div>
+											<div class="service-price">60 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Покрытие ногтей гель-лаком</div>
+											<div class="service-price">50 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Укрепление гелем/акриловой пудрой</div>
+											<div class="service-price">+5 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Френч</div>
+											<div class="service-price">+5 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Дизайн (слайдеры, фольга, втирка, стразы)</div>
+											<div class="service-price">+1 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Педикюр</div>
+											<div class="service-price">45 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Педикюр с обработкой стоп</div>
+											<div class="service-price">55 BYN</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="two-lines"></div>
+						</div>
+					</div>
+
+
+					<div class="course-item">
+
+						<img src="images/hair_4.jpg" class="course-item-img">
+
+						<div class="course-white-rect">
+							<div class="service-item-content">
+
+								<img src="images/hair_4.jpg" class="service-item-img">
+
+								<div class="service-item-content-wrapper">
+
+									<p class="title">Причёски</p>
+
+									<div class="services-list-2">
+										
+										<div class="service">
+											<div class="service-description">Классические локоны</div>
+											<div class="service-price">80 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Голливудские локоны</div>
+											<div class="service-price">90 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Высокий пучок</div>
+											<div class="service-price">90 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Низкий пучок с плетением</div>
+											<div class="service-price">100 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Хвост с локонами</div>
+											<div class="service-price">70 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Косы и плетения</div>
+											<div class="service-price">100 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Причёска "Мальвина"</div>
+											<div class="service-price">80 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Причёска «Ракушка»</div>
+											<div class="service-price">80 BYN</div>
+										</div>
+										<div class="service">
+											<div class="service-description">Причёска «Объёмные косы»</div>
+											<div class="service-price">90 BYN</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="two-lines"></div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class='footer'>
+
+			<hr class="border-style">
+
+			<div class="container">
+				<div class="footer-wrapper">
+
+					<a href="index.html" class="footer-logo">
+						<img src="images/logo.png">
+					</a>
+
+					<nav class="footer-menu">
+
+						<ul class="footer-list">
+							<li>
+								<a href="courses.html" class="header-link">Наши курсы</a>
+							</li>
+							<li>
+								<a href="services.html" class="header-link">Наши услуги</a>
+							</li>	
+							<li>
+								<a href="contacts.html" class="header-link">Контакты</a>
+							</li>	
+						</ul>
+
+					</nav>
+
+					<div class="social-networks">
+						<img src="images/inst.png">
+						<img src="images/vk.png">
+						<img src="images/viber.png">
+					</div>
+
+				</div>
+			</div>
+
+		</footer>
+		<!-- /FOOTER -->
+
+
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	</html>

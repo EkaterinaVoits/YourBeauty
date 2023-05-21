@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your Beauty</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styleHeader.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+
+</head> 
+
+<body>
+
+	<!------------ HEADER -------------->
+	<header class="header">
+		<div class="container">
+			<div class="header-body">
+
+				<a href="index.html" class="header-logo-2">
+					YOUR BEAUTY
+				</a>
+
+				<div class="header-burger">
+					<span>
+					</span>
+				</div>
+
+				<nav class="header-menu">
+
+					<ul class="header-list">
+						<li>
+							<a href="courses.html" class="header-link">Наши курсы</a>
+
+						</li>
+						<li>
+							<a href="services.html" class="header-link">Наши услуги</a>
+
+						</li>
+					</ul>
+
+					<a href="index.html" class="header-logo">
+						<img src="images/logo.png" alt="logo">
+					</a>
+
+					<ul class="header-list">
+						<li>
+							<a href="contacts.html" class="header-link ">Контакты</a>
+
+						</li>
+						<li>
+							<span class="header-link show-consult-form">
+								Консультация
+							</span>
+						</li>
+					</ul>
+
+					<a href="index.html" title="Главная" class="header-logo-3">
+						<img src="images/logo.png" alt="logo">
+					</a>
+
+				</nav>
+
+			</div>
+		</div>
+		<hr class="border-style">
+	</header>
+	<!------------ /HEADER -------------->
+
+	<!------------ FORM -------------->
+	<div class="consult-form" id="consult-form">
+
+		<div class="white-form-2">
+			<div class="close-form">
+				<img src="images/close.png" class="close-btn">
+			</div>
+
+			<div class="form-content-wrapper">
+
+
+				<div class="form-content-2">
+
+					<div>
+						<p>Ваше имя</p>
+						<input type="text" id="consult-name" name="name" size="30" class="border-style">
+					</div>
+					<div>
+						<p>Номер телефона</p>
+						<input type="text" id="consult-telephone" name="telephone" size="30" class="border-style phone">
+						<script type="text/javascript">
+							$(".phone").mask("+375(99)999-99-99");
+						</script>
+					</div>
+
+					<button class="btn" onclick="form1()">
+						<p>Отправить</p>
+						<img src="images/arrow.png" class="arrow">
+					</button>
+				</div>
+				<img src="images/plant_2_1.png" class="form-img">
+			</div>
+			<div class="two-lines"></div>
+		</div>
+	</div>
+	<!------------ /FORM -------------->
+
+	<!------------ MESSAGE FORM -------------->
+		<div class="message-form message-form-1" id="message-form-1">
+			<div class="message-content" id="message-content">
+				Вы подали заявку на консультацию. В ближайшее время наш администратор свяжется с вами! Если вы обнаружили, что телефон указан неверно, заполните форму ещё раз!
+			</div>
+			<div class="btn-wrapper">
+				<button class="btn" onclick="closeMessage()">ОК</button>
+			</div>
+			
+		</div>
+	<!------------ /MESSAGE FORM -------------->
+
+	<div class="page-content">
+
+		<!------------ SHORT COURSE DESCRIPTION BLOCK -------------->
+		<div class="block block-9">
+			<div class="container">
+				<div class="course">
+
+					<div class="image-rect course-img-rect">
+						<img src="images/course1.png" class="course-img">
+					</div>	
+
+					<div class="course-description">
+
+						<div class="title-group">
+							<p class="title first-title-2">базовый курс</p>
+							<p class="title second-title-2">“ВИЗАЖИСТ С 0”</p>
+						</div>
+
+						<div class="course-item-advantages">
+
+							<ul type="disc" class="course-advantages">
+								<li>11 занятий (60 академических часов)</li>
+								<li>занятия в мини-группе 2-5 человек</li>
+								<li>практика на каждом занятии</li>
+								<li>сертификат по окончании курса</li>
+								<li>самые трендовые техники макияжа</li>
+							</ul>
+
+						</div>
+
+						<p class="title course-price">стоимость: 2000 byn</p>
+
+						<button class="btn" >
+							<a href="#reserve-form">
+								<p>Записаться</p>
+								<img src="images/arrow.png" class="arrow">
+							</a>
+						</button>
+
+					</div>
+					<div class="two-lines"></div>
+
+				</div>
+			</div>
+		</div>
+		<!------------ /SHORT COURSE DESCRIPTION BLOCK -------------->
+
+
+		<!------------ RIGHT PLANT -------------->
+		<img src="images/plant_2.png" class="plant_10">
+
+
+		<!------------ DESCRIPTION BLOCK -------------->
+		<div class="block block-2">
+			<div class="brown-rect">
+				<div class="white-line">
+					<div class="container">
+						<div class="full-course-description">
+							Базовый курс «ВИЗАЖИСТ» – это первый шаг на пути к цели, начальный этап в профессиональной карьере каждого визажиста. На данном курсе проходит обучение всех желающих освоить новую для себя профессию – Визажист.
+							В школе визажистов Your Beauty студенты осваивают с нуля все фундаментальные темы и техники в макияже, узнают профессиональные секреты и получают практический опыт. <br><br>
+							Базовые курсы визажа наша команда преподавателей разработала с учетом классических техник, лежащих в основе любого макияжа, ориентируясь на последние мировые тенденции и новинки в сфере красоты. Для максимального эффекта от обучения и усвоения программы, практике отведено более 80%, а теория включает основные знания и тезисы, без лишней воды.
+							В теории и на практике Вы изучите: скульптуру лица, дневной макияж, вечерний и смоки айз, бронзовый макияж, макияж на кремовых текстурах, свадебные образы, оформление бровей, стрелки, макияж с акцентом на губах и многое другое. С программой курса вы можете ознакомиться ниже.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!------------ /DESCRIPTION BLOCK -------------->
+
+		<!------------ LEFT PLANT -------------->
+		<img src="images/plant_8.png" class="plant plant_11">
+
+
+		<!------------ WHY CHOOSE COURSES BLOCK -------------->
+		<div class="block block-10">
+			<div class="container">
+
+				<div class="title-group">
+					<p class="title first-title-2">ПОЧЕМУ ВЫБИРАЮТ</p>
+					<p class="title second-title-2">НАШИ КУРСЫ?</p>
+				</div>
+
+				<div class="white-rect">
+					<div class="why-content">
+
+						<div class="why-items-wrapper">
+
+							<div class="why-item">
+
+								<img src="images/why_plant_1.png">
+
+								<div class="title-group-2">
+									<p class="left-title-2">НЕ ТРЕБУюТ</p>
+									<p class="right-title-2">ПОДГОТОВКИ</p>
+								</div>
+
+								<div class="why-description">
+									Вы можете прийти на курс без навыков в визаже или с опытом за плечами-это не имеет значения. <br>
+									Мы научим вас всему, чему необходимо
+								</div>
+
+							</div>
+
+							<div class="vertical-line"></div>
+
+							<div class="why-item">
+
+								<img src="images/why_plant_2.png">
+
+								<div class="title-group-2">
+									<p class="left-title-2">МИНИ-ГРУППЫ</p>
+									<p class="right-title-2">3-5 ЧЕЛОВЕК</p>
+								</div>
+
+								<div class="why-description">
+									Мы организуем мини-группы, чтобы вы комфортно себя чувствовали и смогли получить достаточно внимания от наших преподавателей.
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="vertical-line"></div>
+
+						<div class="why-items-wrapper">
+
+							<div class="why-item">
+
+								<img src="images/why_plant_3.png">
+
+								<div class="title-group-2">
+									<p class="left-title-2">КОСМЕТИКА</p>
+									<p class="right-title-2">ШКОЛЫ</p>
+								</div>
+
+								<div class="why-description">
+									Для вашей практики мы предоставляем только люксовую косметику, поэтому не стоит беспокоиться и приносить свою.
+								</div>
+
+							</div>
+
+							<div class="vertical-line"></div>
+
+							<div class="why-item">
+
+								<img src="images/why_plant_4.png">
+
+								<div class="title-group-2">
+									<p class="left-title-2">СЕРТИФИКАТ</p>
+									<p class="right-title-2">ОТ ШКОЛЫ</p>
+								</div>
+
+								<div class="why-description">
+									По окончанию курсов мы предоставляем вам международный сертификат об окончании курса, подтверждающий прохождение курса
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!------------ /WHY CHOOSE COURSES BLOCK -------------->
+
+
+		<!------------ RIGHT PLANT -------------->
+		<img src="images/plant_5.png" class="plant plant_12">
+
+		<!-- COURSE PROGRAM BLOCK -->
+		<div class="block block-6">
+			<div class="container">
+
+				<div class="title-group">
+					<p class="title first-title">ПРОГРАММА</p>
+					<p class="title second-title">КУРСА</p>
+				</div>
+
+				<div class="services">
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 1. ТЕОРЕТЕЧЕСКИЙ БЛОК: ВВЕДЕНИЕ В ПРОФЕССИЮ ВИЗАЖИСТ 
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_1.jpg">
+								</div>
+
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Основы и направления работы визажиста.</li>
+										<li>Материаловедение. Основы коррекции лица: <br>- изучение скульптуры лица, <br>- схемы нанесения косметических средств. </li>
+										<li>Гигиена рабочего места.</li>
+										<li>Колористика: теория цвета. Разбор цветотипов</li>
+										<li>Уход. Подготовка кожи к макияжу. Идеальный тон. Основы коррекции лица:<br>- изучение скульптуры лица,<br>- схемы нанесения косметических средств</li>
+										<li>Инструментоведение: классификация и использование профессиональных кистей, типы и назначение баз под макияж, праймеров, цветовые и текстурные различие тонирующих средств, разновидности и классификация продуктов для выполнения профессионального макияжа.</li>
+										<li>Чтение лица, азбука и анатомия макияжа, типы внешности, кожи, формы и детали лица, их классификация и коррекция, сангигиена, цветовой круг, основы колористики, работа с цветными карточками, основные схемы построения макияжа, принципы выбора цветовой гаммы.</li>
+										
+									</ul>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 2. NUDE MAKE UP
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_2.jpg">
+								</div>
+
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Различные сферы применения нюдового натурального макияжа. В чем отличие повседневного дневного макияжа от beauty-съемки glow nude skin</li>
+										<li>Создание красивой здоровой кожи, как добиться бархатистого матового и сияющего глянцевого финиша. Подбор необходимых продуктов, анализ различных тональных текстур, а также хайлайтеров и иллюминайзеров. Анатомия лица, зоны тени и бликов, как правильно определить точки нанесения светящихся текстур на каждом лице.</li>
+										<li>Коррекция несовершенств кожного покрова и овала лица (влажная и сухая), сухие, кремовые, и жидкие эмульсионные продукты.</li>
+										<li>Теневая техника в макияже глаз на праймере. Как выбрать тени максимально деликатной текстуры, как использовать в макияже глаз продукты для скульптурирования и румян, бронзеры.</li>
+										<li>Технология выполнения макияжа губ с размытым контуром "зацелованные" губы.</li>
+										<li>Демонстрация и отработка.</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 3. СВАДЕБНЫЙ МАКИЯЖ. ТЕНДЕНЦИИ 2023
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_3.jpg">
+								</div>
+
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Особенности в свадебном макияже</li>
+										<li>Психология работы с невестами</li>
+										<li>Архитектура стрелки, правильные брови</li>
+										<li>Свадебный макияж на восковых и водостойких текстурах, алгоритм создания нежного образа невесты.</li>
+										<li>Подбор подходящей цветовой гаммы, стойких  и деликатных текстур, самые современные и востребованные продукты для макияжа невесты.</li>
+										<li>Работа с матовыми тенями, сияющими спарклами и перламутровой пудрой в качестве акцента, использование точечных цветовых нюансов.</li>
+										<li>Технология вклейки пучков-ресничек.</li>
+										<li>Демонстрация и отработка.</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 4. ПОДВОДКА. МАКИЯЖ СО СТРЕЛКОЙ
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<!-- lesson program block  -->
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<!-- SPLATTERS -->
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_4.jpg">
+								</div>
+								<!-- /Block Image -->
+
+
+								<!-- Block services list -->
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Построение стрелки для разных типов глаз, в том числе для глаз с нависанием века и асимметрией</li>
+										<li>Создание красивой здоровой кожи, как добиться бархатистого матового и сияющего глянцевого финиша. Подбор необходимых продуктов, анализ различных тональных текстур, а также хайлайтеров и иллюминайзеров. Анатомия лица, зоны тени и бликов, как правильно определить точки нанесения светящихся текстур на каждом лице.</li>
+										<li>Коррекция несовершенств кожного покрова и овала лица (влажная и сухая), сухие, кремовые, и жидкие эмульсионные продукты.</li>
+										<li>Теневая техника в макияже глаз на праймере. Как выбрать тени максимально деликатной текстуры, как использовать в макияже глаз продукты для скульптурирования и румян, бронзеры.</li>
+										<li>Технология выполнения макияжа губ с размытым контуром "зацелованные" губы.</li>
+										<li>Демонстрация и отработка.</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 5. ВЕЧЕРНИЙ МАКИЯЖ. КАРАНДАШНАЯ ТЕХНИКА
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<!-- lesson program block  -->
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<!-- SPLATTERS -->
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_5.jpg">
+								</div>
+								<!-- /Block Image -->
+
+
+								<!-- Block services list -->
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Вечерний макияж карандашом – классическая техника +
+										Разбор понятия тень-полутень-блик</li>
+										<li>Кремовая коррекция лица</li>
+										<li>Как подобрать растушевку под форму лица клиента?</li>
+										<li>Цветовой круг: правила сочетания цветов + работа с пигментом</li>
+										<li>Подбор подложек под тени</li>
+										<li>Нестандартные приемы в работе с цветом</li>
+										<li>Тени для вечернего макияжа: техники и правила растушевки, подбор текстур и палитры</li>
+										<li>Гармоничный вечерний образ – как его создать и избежать вульгарности?</li>
+										<li>Демонстрация и отработка.</li>
+
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 6. ЛИФТИНГ МАКИЯЖ
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<!-- lesson program block  -->
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<!-- SPLATTERS -->
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_6.jpg">
+								</div>
+								<!-- /Block Image -->
+
+
+								<!-- Block services list -->
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Лифтинг-макияж для женщин 35+</li>
+										<li>В чем принципиальное отличие подготовки и тонирования кожи, коррекции овала лица и выбора цветовой гаммы для лифтинг-макияжа</li>
+										<li>"Омолаживающие" приемы и фишки, практические рекомендации выбора лучших современных продуктов класса люкс, подходящих кистей для работы с чувствительной возрастной кожей</li>
+										<li>Маскировка пигментных патен, морщин Кремовая коррекция лица</li>
+										<li>Демонстрация и отработка.</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 7. SMOKY EYES
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<!-- lesson program block  -->
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<!-- SPLATTERS -->
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_7.jpg">
+								</div>
+								<!-- /Block Image -->
+
+
+								<!-- Block services list -->
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Классический матовый макияж smoky eyes, который требует максимальной чистоты тушевки и правильного построения формы глаза</li>
+										<li>Smoky eyes: легкая дымка на глазах, работа с водостойкими кайалами</li>
+										<li>Губы в стиле Nude, либо создание gloss эффекта. Секреты фотомакияжа</li>
+										<li>Различные способы построения и выполнения на кремовой и карандашной основе</li>
+										<li>Работа с тенями и пигментами, способы создания водоустойчивых текстур</li>
+										<li>Smoky eyes как корректирующий макияж. Почему выбор этой схемы самый удобный при нестандартной форме строения века</li>
+										<li>Кремовая коррекция лица. Теория. Колористика. Цвет в макияже. Работа с цветовым кругом. Подбор оттенков и сочетание цветов в макияже</li>
+										<li>Демонстрация и отработка.</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 8. Colour makeup
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<!-- lesson program block  -->
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<!-- SPLATTERS -->
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_8.jpg">
+								</div>
+								<!-- /Block Image -->
+
+
+								<!-- Block services list -->
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Теория и демонстрация выполнения Colormakeup. Выбор сложной цветовой гаммы макияжа с помощью цветового круга. Способы соединения контрастных цветов.Техника построения типичной вытянутой формы глаза для colormakeup, работа с кремовыми тенями, тинтами и липкими продуктами. Способ коррекции формы глаза с помощью цвета, правильный выбор света, тени и блика для каждого глаз</li>
+										<li>Виды подложек, методы их наслоения, специфика и взаимодействие между собой. Работа с рассыпчатыми пигментами, хамелеонами, дуохромами, бриллиантовой слюдой. Выбор наиболее удобной формы и подходящего ворса кистей для чистоты сложных растушевок и переходов цветов</li>
+										
+										<li>Демонстрация и отработка.</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 9. Cat eyes
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<!-- lesson program block  -->
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<!-- SPLATTERS -->
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_9.jpg">
+								</div>
+								<!-- /Block Image -->
+
+
+								<!-- Block services list -->
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Разбор видов растушёванных стрелок.</li>
+										<li>Принципы соединения тушевки верхнего и нижнего века</li>
+										<li>Подбор стрелки под особенности века клиентки</li>
+										<li>Модный макияж "растушеванная стрелка", напоминающий характерную вытянутую "кошачью" форму глаза</li>
+										<li>Методы и схемы построения,  самые стойкие и пластичные продукты, симметрия, ультрамодная технология "двойной стрелки"</li>
+										<li>Демонстрация и отработка.</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 10. Hollywood makeup
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<!-- lesson program block  -->
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<!-- SPLATTERS -->
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_10.jpg">
+								</div>
+								<!-- /Block Image -->
+
+
+								<!-- Block services list -->
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Голливудский макияж - длинные графичные стрелки + яркие губы</li>
+										<li>Симметрия в макияже. Подбор кистей правильных форм и упругого ворса для выполнения идеальных стрелок</li>
+										<li>Методы и схемы построения правильной формы бровей и стрелок с помощью карандашей, помадок, подводок и теней, как добиться симметричной и четкой формы губ</li>
+										<li>Теневая техника в макияже глаз на праймере. Как выбрать тени максимально деликатной текстуры, как использовать в макияже глаз продукты для скульптурирования и румян, бронзеры.</li>
+										
+										<li>Демонстрация и отработка.</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div>
+						<div class="service-item">
+							<div class="service-title">
+								Занятие 11. ЭКЗАМЕН
+							</div>
+							<div class="show-block">
+								<span></span>
+							</div>
+						</div>
+
+						<!-- lesson program block  -->
+						<div class="lesson-program">
+							<div class="lesson-wrapper">
+
+								<!-- SPLATTERS -->
+								<img src="images/splatters_5.png" class="splatters splatters_5">
+
+								<div class="image-rect lesson-img">
+									<img src="images/lesson_11.jpg">
+								</div>
+								<!-- /Block Image -->
+
+
+								<!-- Block services list -->
+								<div class="lesson-program-text">
+
+									<ul type="disc" class="course-advantages">
+										<li>Сдача экзамена по теориию ( в билете будет 2 вопроса по пройденному материалу)</li>
+										<li>Практика: дневной и вечерний образ</li>
+										<li>Самостоятельная отработка макияжа на модели</li>
+										<li>Подготовка полного образа: аксессуары, прическа, наряд</li>
+										<li>По желанию студентов на занятие приглашается профессиональный фотограф (обработка, ретушь последующих фотографий за дополнительную плату)</li>
+										<li>Вручене дипломов</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</div>
+		
+		<!-- /COURSE PROGRAM BLOCK -->
+
+
+		<!-- LEFT PLANT -->
+		<img src="images/plant_3.png" class="plant plant_3">
+
+		<!-- SPLATTERS -->
+		<img src="images/splatters_1.png" class="splatters splatters_1">
+
+		<!------------ RIGHT PLANT -------------->
+		<img src="images/plant_4.png" class="plant plant_4">
+
+
+		<!-- ABOUT TEACHER BLOCK -->
+		<div class="block block-3">
+			<div class="container">
+				<div class="about-block">
+
+					<!-- Block content -->
+					<div class="about-founder-block">
+						<!-- title -->
+						<div class="title-group">
+							<p class="title first-title-2">ПРЕПОДАВАТЕЛЬ курсов - </p>
+							<p class="title second-title-2">ЕКАТЕРИНА ЕФИМЧИК</p>
+						</div>
+						<!-- /title -->
+
+						<!-- content -->
+						<div class="about-founder-text">
+							Анна является основателем студии красоты и ведущим визажистом международного уровня с опытом работы более 12 лет
+							<br><br>
+							Действующим преподавателем в собственной школе макияжа непрерывно повышает свою квалификацию, проходит различные стажировки, мастер-классы и семинары, что позволяет всегда оставаться в курсе современных техник и инноваций.
+						</div>
+						<!-- /content -->
+					</div>
+					<!-- /Block content 
+					<div class="image-rect teacher-img">
+						<img src="images/teacher_img.png">
+					</div>
+					<!-- /Block Image -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /ABOUT TEACHER BLOCK -->
+
+
+		<!-- STUDENTS WORKS BLOCK -->
+		<div class="block">
+			<div class="container">
+
+				<!-- Title -->
+				<div class="title-group">
+					<p class="title first-title">РАБОТЫ УЧЕНИКОВ</p>
+					<p class="title second-title">БАЗОВОГО КУРСА</p>
+				</div>
+				<!-- /Title -->
+
+				<div class="students_works">
+					<img src="images/students_works2_img.png">
+				</div>
+			</div>
+		</div>
+		<!-- /STUDENTS WORKS BLOCK -->
+
+		<!-- SPLATTERS -->
+		<img src="images/splatters_6.png" class="splatters splatters_6">
+
+		<!------------ RIGHT PLANT -------------->
+		<img src="images/plant_9.png" class="plant plant_13">
+
+		<!-- REVIEWS BLOCK -->
+		<div class="block block-11">
+			<div class="container">
+
+				<div class="title-group">
+					<p class="title first-title">отзывы НАШИХ</p>
+					<p class="title second-title">УЧЕНИКОВ</p>
+				</div>
+
+				<div class="slider">
+
+					<img src="images/scroll_arrow_1.png" class="slider-arrow desktop-slider-arrow" onclick="previousSlide()">
+
+					<div class="slider-item">
+						<div class="slider-item-wrapper">
+							<div class="review-form">
+								<div class="review-content">
+									<div class="review-title">
+										“САМАЯ ЛУЧШАЯ ШКОЛА ДЛЯ ВИЗАЖИСТОВ МИНСКА!”
+									</div>
+									<div class="review">
+										Я узнала для себя много нового и теперь уверена, что хочу стать визажистом! Спасибо преподавателям за чуткий подход и школе за прекрасно разработанную программу! Всем рекомендую пройти курс!
+									</div>
+									<div class="reviewer">
+										АННА ВОЛКОВА
+									</div>  
+								</div>
+								<div class="two-lines"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider-item" style="display: none;">
+						<div class="slider-item-wrapper">
+							<div class="review-form">
+								<div class="review-content">
+									<div class="review-title">
+										Ни разу не пожалела, что выбрала эту школу! 
+									</div>
+									<div class="review">
+										Курсы порадовали обилием важных тем, которые я хотела освоить - здесь мы прошли и свадебный, и возрастной макияж. Спасибо нашим педагогам - они настоящие профессионалы в своём деле!
+									</div>
+									<div class="reviewer">
+										Алёна Ефимович
+									</div>  
+								</div>
+								<div class="two-lines"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider-item" style="display: none;">
+						<div class="slider-item-wrapper">
+							<div class="review-form">
+								<div class="review-content">
+									<div class="review-title">
+										превосходные курсы и преподаватели!
+									</div>
+									<div class="review">
+										Обучение было настолько успешным и интересным, что окончив курсы для себя, я начала красить подруг, а потом брать первых клиентов! Рекомендую курсы школы "Your Beauty" каждой!
+									</div>
+									<div class="reviewer">
+										Анастасия Сергеева
+									</div>  
+								</div>
+								<div class="two-lines"></div>
+							</div>
+						</div>
+					</div>
+
+					<img src="images/scroll_arrow_2.png" class="slider-arrow desktop-slider-arrow" onclick="nextSlide()">
+
+				</div>
+
+				<div class="arrows-for-mobile-slider">
+					<div class="arrows-wrapper">
+						<img src="images/scroll_arrow_1.png" class="slider-arrow" onclick="previousSlide()">
+						<img src="images/scroll_arrow_2.png" onclick="nextSlide()">
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /REVIEWS BLOCK -->
+
+		<!-- SPLATTERS -->
+		<img src="images/splatters_7.png" class="splatters splatters_7">
+
+		<!------------ RIGHT PLANT -------------->
+		<img src="images/plant_2.png" class="plant plant_9">
+
+
+		<!-- LEFT PLANT -->
+		<img src="images/plant_1.png" class="plant plant_14">
+
+		
+
+
+		<!-- BOOK COURSE BLOCK -->
+		<div class="block block-8" id="reserve-form">
+			<div class="container">
+
+				<!-- Title -->
+				<div class="title-group">
+					<p class="title first-title">Записаться</p>
+					<p class="title second-title">на курс</p>
+				</div>
+				<!-- /Title -->
+
+				<!-- Form -->
+				<div class="white-form-wrapper">
+					<div class="white-form">
+						<div class="form-content">
+							<!-- Inputs -->
+							<div>
+								<p>Ваше имя</p>
+								<input type="text" name="name" id="name" size="30" class="border-style" title="Первая буква прописная. ">
+							</div>
+							<div>
+								<p>Номер телефона</p>
+								<input type="text" name="telephone" id="telephone" placeholder="+375 (  ) -   -" size="30" class="border-style phone">
+							</div>
+							<!-- /Inputs -->
+							<!-- Button -->
+
+							<button class="btn" onclick="form2()">
+								<p>Отправить</p>
+								<img src="images/arrow.png" class="arrow">
+							</button>
+							<!-- /Button -->
+						</div>
+						<div class="two-lines"></div>
+					</div>
+				</div>
+				<!-- /Form -->
+
+			</div>
+		</div>
+		<!-- /BOOK COURSE BLOCK -->
+
+
+		<!-- FOOTER -->
+		<footer class='footer'>
+
+			<hr class="border-style">
+			
+			<div class="container">
+				<div class="footer-wrapper">
+
+					<!-- Logo -->
+					<a href="index.html" class="footer-logo">
+						<img src="images/logo.png">
+					</a>
+					<!-- /Logo -->
+
+					<!-- Menu -->
+					<nav class="footer-menu">
+
+						<ul class="footer-list">
+							<li>
+								<a href="courses.html" class="header-link">Наши курсы</a>
+							</li>
+							<li>
+								<a href="services.html" class="header-link">Наши услуги</a>
+							</li>	
+							<li>
+								<a href="contacts.html" class="header-link">Контакты</a>
+							</li>	
+						</ul>
+
+					</nav>
+					<!-- /Menu -->
+
+					<!-- Social networks -->
+					<div class="social-networks">
+						<img src="images/inst.png">
+						<img src="images/vk.png">
+						<img src="images/viber.png">
+					</div>
+
+					<!-- /Social networks -->
+
+				</div>
+			</div>
+			
+		</footer>
+		<!-- /FOOTER -->
+
+	</div>
+
+	<!-- FORM -->
+		<div class="message-form-2 message-form" id="message-form-2">
+			<div class="message-content" id="message-content">
+				Вы записались на курс. В ближайшее время наш администратор свяжется с вами для подтверждения записи! Если вы обнаружили, что телефон указан неверно, заполните форму ещё раз!
+			</div>
+			<div class="btn-wrapper">
+				<button class="btn" onclick="closeMessage()">ОК</button>
+			</div>
+			
+		</div>
+	<!-- /FORM -->
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</html>

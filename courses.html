@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your Beauty</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styleHeader.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+
+		<!------------ HEADER -------------->
+	<header class="header">
+		<div class="container">
+			<div class="header-body">
+
+				<a href="index.html" class="header-logo-2">
+					YOUR BEAUTY
+				</a>
+
+				<div class="header-burger">
+					<span>
+					</span>
+				</div>
+
+				<nav class="header-menu">
+
+					<ul class="header-list">
+						<li>
+							<a href="courses.html" class="header-link">Наши курсы</a>
+
+						</li>
+						<li>
+							<a href="services.html" class="header-link">Наши услуги</a>
+
+						</li>
+					</ul>
+
+					<a href="index.html" class="header-logo">
+						<img src="images/logo.png" alt="logo">
+					</a>
+
+					<ul class="header-list">
+						<li>
+							<a href="contacts.html" class="header-link ">Контакты</a>
+
+						</li>
+						<li>
+							<span class="header-link show-consult-form">
+								Консультация
+							</span>
+						</li>
+					</ul>
+
+					<a href="index.html" title="Главная" class="header-logo-3">
+						<img src="images/logo.png" alt="logo">
+					</a>
+
+				</nav>
+
+			</div>
+		</div>
+		<hr class="border-style">
+	</header>
+	<!------------ /HEADER -------------->
+
+	<!------------ FORM -------------->
+	<div class="consult-form" id="consult-form">
+
+		<div class="white-form-2">
+			<div class="close-form">
+				<img src="images/close.png" class="close-btn">
+			</div>
+
+			<div class="form-content-wrapper">
+
+
+				<div class="form-content-2">
+
+					<div>
+						<p>Ваше имя</p>
+						<input type="text" id="consult-name" name="name" size="30" class="border-style">
+					</div>
+					<div>
+						<p>Номер телефона</p>
+						<input type="text" id="consult-telephone" name="telephone" size="30" class="border-style phone">
+						<script type="text/javascript">
+							$(".phone").mask("+375(99)999-99-99");
+						</script>
+					</div>
+
+					<button class="btn" onclick="form1()">
+						<p>Отправить</p>
+						<img src="images/arrow.png" class="arrow">
+					</button>
+				</div>
+				<img src="images/plant_2_1.png" class="form-img">
+			</div>
+			<div class="two-lines"></div>
+		</div>
+	</div>
+	<!------------ /FORM -------------->
+
+	<!------------ MESSAGE FORM -------------->
+		<div class="message-form message-form-1" id="message-form-1">
+			<div class="message-content" id="message-content">
+				Вы подали заявку на консультацию. В ближайшее время наш администратор свяжется с вами! Если вы обнаружили, что телефон указан неверно, заполните форму ещё раз!
+			</div>
+			<div class="btn-wrapper">
+				<button class="btn" onclick="closeMessage()">ОК</button>
+			</div>
+			
+		</div>
+	<!------------ /MESSAGE FORM -------------->
+
+<div class="page-content">
+
+	<!-- COURSES CATALOG BLOCK -->
+	<div class="block block-9">
+		<div class="container">
+
+			<!-- Title -->
+			<p class="title">Наши курсы</p>
+			<!-- /Title -->
+
+			<div class="courses-catalog-content">
+
+				<!-- Course Item -->
+				<div class="course-item">
+					
+					<!-- Image -->
+					<img src="images/course1.png" class="course-item-img">
+					<!-- /Image -->
+
+					<!-- White block -->
+					<div class="course-white-rect">
+						<div class="course-item-content">
+
+							<!-- Image -->
+							<img src="images/course1.png" class="course-item-img-2">
+							<!-- /Image -->
+
+							<div class="course-item-content-wrapper">
+
+								<!-- title -->
+								<div class="title-group">
+									<p class="title first-title-2">базовый курс</p>
+									<p class="title second-title-2">“ВИЗАЖИСТ С 0”</p>
+								</div>
+								<!-- /title -->
+
+								<!-- description -->
+								<div class="course-item-description">
+									В данном курсе вы научитесь всем базовым техникам, для того что бы выполнять макияж профессионально
+								</div>
+								<!-- /description -->
+
+								<!-- advantages -->
+								<div class="course-item-advantages">
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>11 занятий (60 академических часов)</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>занятия в мини-группе 2-5 человек</div>
+									</div >
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>практика на каждом занятии</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>сертификат по окончании курса</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>самые трендовые техники макияжа</div>
+									</div>
+								</div>
+								<!-- /advantages -->
+
+								<!-- Price -->
+								<p class="title price">стоимость: 2000 byn</p>
+								<!-- /Price -->
+
+								<!-- Button -->
+								<a class="btn" href="course.html">
+									<p>Узнать больше</p>
+									<img src="images/arrow.png" class="arrow">
+								</a>	
+								<!-- /Button -->
+
+							</div>
+
+						</div>
+						<div class="two-lines"></div>
+					</div>
+					<!-- /White block -->
+				</div>
+				<!-- /Course Item -->
+
+				<!-- Course Item -->
+				<div class="course-item">
+					
+					<!-- Image -->
+					<img src="images/course2.png" class="course-item-img">
+					<!-- /Image -->
+
+					<!-- White block -->
+					<div class="course-white-rect">
+						<div class="course-item-content">
+
+							<!-- Image -->
+							<img src="images/course2.png" class="course-item-img-2">
+							<!-- /Image -->
+
+							<div class="course-item-content-wrapper">
+
+								<!-- title -->
+								<div class="title-group">
+									<p class="title first-title-2">САМ СЕБЕ</p>
+									<p class="title second-title-2">ВИЗАЖИСТ</p>
+								</div>
+								<!-- /title -->
+
+								<!-- description -->
+								<div class="course-item-description">
+									В данном курсе вы научитесь 3 необходимым макияжем для повседневной жизни и на выход. Вместе подберём продукты и разберём технику их нанесения.
+								</div>
+								<!-- /description -->
+
+								<!-- advantages -->
+								<div class="course-item-advantages">
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>3 занятия (10 академических часов)</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>индивидуальные занятия</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>3 востребованных макияжа</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>подбор личной косметички</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>косметика на курсе паредоставляется</div>
+									</div>
+								</div>
+								<!-- /advantages -->
+
+								<!-- Price -->
+								<p class="title price">стоимость: 2000 byn</p>
+								<!-- /Price -->
+
+								<!-- Button -->
+								<a class="btn" href="course.html">
+									<p>Узнать больше</p>
+									<img src="images/arrow.png" class="arrow">
+								</a>	
+								<!-- /Button -->
+
+							</div>
+
+						</div>
+						<div class="two-lines"></div>
+					</div>
+					<!-- /White block -->
+				</div>
+				<!-- /Course Item -->
+
+				<!-- Course Item -->
+				<div class="course-item">
+					
+					<!-- Image -->
+					<img src="images/course3.png" class="course-item-img">
+					<!-- /Image -->
+
+					<!-- White block -->
+					<div class="course-white-rect">
+						<div class="course-item-content">
+
+							<!-- Image -->
+							<img src="images/course3.png" class="course-item-img-2">
+							<!-- /Image -->
+
+							<div class="course-item-content-wrapper">
+
+								<!-- title -->
+								<div class="title-group">
+									<p class="title first-title-2">трендовый</p>
+									<p class="title second-title-2">макияж </p>
+								</div>
+								<!-- /title -->
+
+								<!-- description -->
+								<div class="course-item-description">
+									В данном курсе разберём последние трендовые макияжи этого года, научимся новым техникам и укрепим базовые знания
+								</div>
+								<!-- /description -->
+
+								<!-- advantages -->
+								<div class="course-item-advantages">
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>3 занятия (10 академических часов)</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>мини-группы 2-4 человек</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>3 востребованных макияжа</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>предоставление моделей</div>
+									</div>
+									<div class="item-advantage">
+										<img src="images/mark.png" class="mark-img">
+										<div>косметика на курсе паредоставляется</div>
+									</div>
+								</div>
+								<!-- /advantages -->
+
+								<!-- Price -->
+								<p class="title price">стоимость: 2000 byn</p>
+								<!-- /Price -->
+
+								<!-- Button -->
+								<button class="btn">
+									<p>Узнать больше</p>
+									<img src="images/arrow.png" class="arrow">
+								</button>
+								<!-- /Button -->
+
+							</div>
+
+						</div>
+						<div class="two-lines"></div>
+					</div>
+					<!-- /White block -->
+				</div>
+				<!-- /Course Item -->
+
+			</div>
+
+		</div>
+	</div>
+	<!-- /COURSES CATALOG BLOCK -->
+
+<!-- FOOTER -->
+	<footer class='footer'>
+
+		<hr class="border-style">
+		
+		<div class="container">
+			<div class="footer-wrapper">
+
+			<!-- Logo -->
+				<a href="index.html" class="footer-logo">
+					<img src="images/logo.png">
+				</a>
+				<!-- /Logo -->
+
+			<!-- Menu -->
+			<nav class="footer-menu">
+
+				<ul class="footer-list">
+					<li>
+						<a href="courses.html" class="header-link">Наши курсы</a>
+					</li>
+					<li>
+						<a href="services.html" class="header-link">Наши услуги</a>
+					</li>	
+					<li>
+						<a href="contacts.html" class="header-link">Контакты</a>
+					</li>	
+				</ul>
+
+			</nav>
+			<!-- /Menu -->
+
+			<!-- Social networks -->
+			<div class="social-networks">
+				<img src="images/inst.png">
+				<img src="images/vk.png">
+				<img src="images/viber.png">
+			</div>
+
+			<!-- /Social networks -->
+
+		</div>
+		</div>
+		
+	</footer>
+	<!-- /FOOTER -->
+
+	
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
