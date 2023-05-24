@@ -381,6 +381,19 @@ body {
 	display: none;
 }
 
+.plant_17 {
+	transform: rotate(-7deg);
+    left: 5vw;
+    width: 30%;
+}
+
+.plant_18 {
+	width: 25%;
+    right: 9vw;
+    margin-top: -260px;
+    transform: rotate(-5deg);
+}
+
 
 @media screen and (max-device-width: 992px) {
 	.plant_1 {
@@ -426,6 +439,14 @@ body {
 	.plant_14 {
 		margin-top: -60px;
 		left: -3vw;
+	}
+	.plant_17 {
+		width: 33%;
+	}
+
+	.plant_18 {
+		width: 25%;
+	    
 	}
 }
 
@@ -636,7 +657,6 @@ body {
 
 .footer {
 	position: relative;
-	/*padding-top: 100px;*/
 }
 
 .footer-logo img {
@@ -677,7 +697,6 @@ body {
 }
 
 @media screen and (max-device-width: 992px) {
-	
 	.footer-wrapper *{
 		padding-bottom: 10px;
 	}
@@ -694,7 +713,6 @@ body {
 	.footer-list li {  
 	    margin: 0px 5px;
 	}
-
 }
 
 @media screen and (max-device-width: 479px) {
@@ -766,6 +784,10 @@ body {
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+}
+
+.form-content-2 .title {
+	margin-bottom: 30px;
 }
 
 .form-content-2 div {
@@ -2200,7 +2222,7 @@ body {
 	width: 40%;
 	background-color: white;
 	left: 50vw;
-	margin-top: -70vh;
+	margin-top: -75vh;
 	transform:translate(-50%, 0);
 	z-index: 10;
 	padding: 20px;
@@ -2238,3 +2260,32 @@ body {
 }
 
 
+/*------------------- 404 PAGE -------------------*/
+
+
+.block-404 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+}
+
+.number-404 {
+	color: #C2B4B1;
+	font-family: 'Lighthaus';
+	font-size: 264px;
+}
+
+@media screen and (max-device-width: 992px) {
+	.number-404 {
+		font-size: 215px;
+	}
+}	
+
+@media screen and (max-device-width: 479px) {
+	.number-404 {
+		font-size: 200px;
+	}
+
+}

@@ -79,8 +79,11 @@
 
 			<div class="form-content-wrapper">
 
-
 				<div class="form-content-2">
+
+					<div class="title">
+						Получить консультацию
+					</div>
 
 					<div>
 						<p>Ваше имя</p>
@@ -107,15 +110,15 @@
 	<!------------ /FORM -------------->
 
 	<!------------ MESSAGE FORM -------------->
-		<div class="message-form message-form-1" id="message-form-1">
-			<div class="message-content" id="message-content">
-				Вы подали заявку на консультацию. В ближайшее время наш администратор свяжется с вами! Если вы обнаружили, что телефон указан неверно, заполните форму ещё раз!
-			</div>
-			<div class="btn-wrapper">
-				<button class="btn" onclick="closeMessage()">ОК</button>
-			</div>
-			
+	<div class="message-form message-form-1" id="message-form-1">
+		<div class="message-content" id="message-content">
+			Вы подали заявку на консультацию. В ближайшее время наш администратор свяжется с вами! Если вы обнаружили, что телефон указан неверно, заполните форму ещё раз!
 		</div>
+		<div class="btn-wrapper">
+			<button class="btn" onclick="closeMessage()">ОК</button>
+		</div>
+
+	</div>
 	<!------------ /MESSAGE FORM -------------->
 
 	<div class="page-content">
@@ -784,11 +787,11 @@
 						</div>
 						<!-- /content -->
 					</div>
-					<!-- /Block content 
+
 					<div class="image-rect teacher-img">
 						<img src="images/teacher_img.png">
 					</div>
-					<!-- /Block Image -->
+
 
 				</div>
 			</div>
@@ -941,6 +944,9 @@
 							<div>
 								<p>Номер телефона</p>
 								<input type="text" name="telephone" id="telephone" placeholder="+375 (  ) -   -" size="30" class="border-style phone">
+								<script type="text/javascript">
+									$(".phone").mask("+375(99)999-99-99");
+								</script>
 							</div>
 							<!-- /Inputs -->
 							<!-- Button -->
@@ -969,13 +975,10 @@
 			<div class="container">
 				<div class="footer-wrapper">
 
-					<!-- Logo -->
 					<a href="index.html" class="footer-logo">
 						<img src="images/logo.png">
 					</a>
-					<!-- /Logo -->
 
-					<!-- Menu -->
 					<nav class="footer-menu">
 
 						<ul class="footer-list">
@@ -991,16 +994,12 @@
 						</ul>
 
 					</nav>
-					<!-- /Menu -->
 
-					<!-- Social networks -->
 					<div class="social-networks">
 						<img src="images/inst.png">
 						<img src="images/vk.png">
 						<img src="images/viber.png">
 					</div>
-
-					<!-- /Social networks -->
 
 				</div>
 			</div>
@@ -1011,15 +1010,15 @@
 	</div>
 
 	<!-- FORM -->
-		<div class="message-form-2 message-form" id="message-form-2">
-			<div class="message-content" id="message-content">
-				Вы записались на курс. В ближайшее время наш администратор свяжется с вами для подтверждения записи! Если вы обнаружили, что телефон указан неверно, заполните форму ещё раз!
-			</div>
-			<div class="btn-wrapper">
-				<button class="btn" onclick="closeMessage()">ОК</button>
-			</div>
-			
+	<div class="message-form-2 message-form" id="message-form-2">
+		<div class="message-content" id="message-content">
+			Вы записались на курс. В ближайшее время наш администратор свяжется с вами для подтверждения записи! Если вы обнаружили, что телефон указан неверно, заполните форму ещё раз!
 		</div>
+		<div class="btn-wrapper">
+			<button class="btn" onclick="closeMessage()">ОК</button>
+		</div>
+
+	</div>
 	<!-- /FORM -->
 </body>
 

@@ -4,6 +4,7 @@ $(document).ready(function() {
   $('.header-burger').click(function(event) {
     $('.header-burger, .header-menu').toggleClass('active');
     $('body').toggleClass('lock');
+    $('.page-content').toggleClass('blur');
   })
 });
 
@@ -13,16 +14,11 @@ $(document).ready(function() {
 let service_items = document.getElementsByClassName("service-item");
 for (let i = 0; i < service_items.length; i++) {
   service_items[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        //this.classList.toggle("active");
-        /* Toggle between hiding and showing the active panel */
 
         this.classList.toggle("active");
 
         var block = this.nextElementSibling;
 
-        //var body = body1.nextElementSibling;
         if (block.style.display === "block") {
           block.style.display = "none";
         } else {
@@ -142,8 +138,6 @@ function removeBlurStyle(){
     "overflow":"visible" 
   });
 }
-
-//--------------Validate form ---------------
 
 
 function form2(){
